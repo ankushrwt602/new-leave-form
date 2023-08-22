@@ -1,0 +1,236 @@
+body{
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*Header*/
+
+header#header {
+  background: #001529;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-list table {
+  display: flex;
+  color: #fff;
+}
+
+.nav-list table tr {
+  padding: 15px 20px;
+}
+
+.nav-list table tr th {
+  padding: 5px;
+  font-size: 18px;
+}
+
+.logo {
+  width: 80%;
+}
+
+.nav-list {
+  width: 20%;
+}
+/*Header*/
+
+/*Sidebar*/
+.sidebar {
+  background: #001529;
+  position: fixed;
+  top: 13%;
+  width: 20%;
+  height: 100%;
+}
+
+button.ant-btn.css-dev-only-do-not-override-byeoj0.ant-btn-primary {
+  display: none;
+}
+
+ul.ant-menu.ant-menu-root.ant-menu-inline.ant-menu-dark.css-dev-only-do-not-override-byeoj0 {
+  padding-top: 50px;
+}
+/*Sidebar*/
+
+/*Login Page*/
+.login_page{
+  overflow: hidden;
+  padding-top: 5%;
+}
+
+.login_form {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px;
+  margin: 15px 50px;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.login_form h1 {
+  color: #2f2f94;
+  padding: 20px 0 40px;
+  text-align: center;
+}
+
+.ant-form-item-control-input-content button {
+  background: #2f2f94;
+  border: 2px solid #2f2f94;
+  color: #fff;
+  padding: 10px 35px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.ant-form-item-control-input-content button:hover {
+  color: #2f2f94;
+  background: #fff;
+}
+
+:where(.css-dev-only-do-not-override-byeoj0).ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #2f2f94;
+  border-color: #2f2f94;
+}
+
+.ant-form-item.css-dev-only-do-not-override-byeoj0 {
+  margin-bottom: 30px;
+}
+
+:where(.css-dev-only-do-not-override-byeoj0).ant-col-8 {
+  max-width: 25.333333%;
+}
+
+/* Apply Leave */
+section.apply_leave {
+  padding-top: 150px;
+  overflow: hidden;
+  padding-right: 100px;
+  padding-left: 380px;
+}
+
+:where(.css-dev-only-do-not-override-byeoj0).ant-form-item .ant-form-item-control-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 0px;
+}
+
+.applybtn {
+  text-align: center;
+}
+.leaveForm  .ant-col.ant-col-15.ant-form-item-label.css-dev-only-do-not-override-byeoj0 {
+  display: block;
+  width: 100% !important;
+  max-width: 100%;
+  text-align: left;
+}
+.leaveForm  .ant-row.ant-form-item-row.css-dev-only-do-not-override-byeoj0 {
+  display: block;
+}
+.leaveForm  .ant-picker.ant-picker-default.css-dev-only-do-not-override-byeoj0 {
+  width: 100%;
+}
+.leaveForm  .form-calender {
+  display: flex;
+  width: 100%;
+}
+.leaveForm .ant-form-item.css-dev-only-do-not-override-byeoj0 {
+  width: 100%;
+}
+.leaveForm .ant-form.ant-form-horizontal.css-dev-only-do-not-override-byeoj0 {
+  padding: 40px;
+  box-shadow: 0 0 5px #e5dada;
+  border-radius: 20px;
+}
+.leaveForm :where(.css-dev-only-do-not-override-byeoj0).ant-input-number{
+  height: 40px;
+  width: 100%;
+}
+.leaveForm .ant-picker-input input {
+  height: 30px !important;
+}
+.leaveForm .ant-form-item-control-input-content input {
+  height: 40px;
+}
+.leaveForm :where(.css-dev-only-do-not-override-byeoj0).ant-select-single:not(.ant-select-customize-input) .ant-select-selector{
+  height: 40px;
+}
+.leaveForm button.ant-btn.css-dev-only-do-not-override-byeoj0.ant-btn-default {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+.leaveForm  .ant-form-item-control-input-content input#user_textarea {
+  height: 110px;
+}
+.leaveForm  .ant-picker.ant-picker-status-success.css-dev-only-do-not-override-byeoj0 {
+  width: 100%;
+}
+.leaveForm  .ant-select-selector {
+  align-items: center;
+}
+.leaveForm :where(.css-dev-only-do-not-override-byeoj0).ant-form-item .ant-form-item-label >label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before{
+  display: none;
+}
+.leaveForm  label.ant-form-item-required {
+  font-weight: 600;
+  color: #323232 !important;
+}
+.leaveForm .marg-left {
+  margin-left: 10px;
+}
+.buttons .ant-form-item.css-dev-only-do-not-override-byeoj0 {
+  flex: 0 0 16%;
+} 
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.cancel {
+  background: none !important;
+  color: #5c5b5b !important;
+  font-weight: 500;
+  border: 1px solid grey !important;
+}
