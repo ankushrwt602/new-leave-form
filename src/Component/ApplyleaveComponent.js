@@ -7,10 +7,9 @@ const ApplyleaveComponent = () => {
   const onFormLayoutChange = ({ size }) => {
     setComponentSize(size);
   };
-  // snkushj
+  
   return (
     <>
-     {/* 1213*/}
       <Layout />
       <section className="apply_leave">
         <div className="container">
