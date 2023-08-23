@@ -20,7 +20,7 @@ export const getItem = (label, key, icon, children, type ,url) => {
 };
 
 export const employeItems = [
-  getItem("Dashboard", "1", <HomeOutlined /> ,'','employee'),
+  getItem("Dashboard", "1", <HomeOutlined /> ,'','employee', 'main/dashboard-employee'),
   getItem("Department", "2", <ApartmentOutlined />,'','employee'),
   getItem("Option 5", "3", <ContainerOutlined />,'','employee'),
   getItem("Apply Leave", "4", <CarryOutOutlined /> ,'','employee' ,'/main/apply-leave'),
