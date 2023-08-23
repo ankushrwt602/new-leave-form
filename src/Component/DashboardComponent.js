@@ -1,6 +1,6 @@
-import { Layout } from 'antd';
 import React, { useState } from 'react';
 import ReactApexChart from 'react-apexcharts';
+import Layout from "../Component/layoutComponent";
 
 
 function DashboardComponent() {
@@ -26,7 +26,7 @@ function DashboardComponent() {
       <Layout/>
       <div id="chart">
       <ReactApexChart options={options} series={series} type="radialBar" height={350} />
-    </div>
+      </div>
     </>
   );
 }
