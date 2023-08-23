@@ -7,7 +7,6 @@ const ApplyleaveComponent = () => {
   const onFormLayoutChange = ({ size }) => {
     setComponentSize(size);
   };
-  
   return (
     <>
       <Layout />
