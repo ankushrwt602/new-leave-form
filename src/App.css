@@ -234,3 +234,89 @@ section.apply_leave {
   font-weight: 500;
   border: 1px solid grey !important;
 }
+
+/*Dashboard Employee*/
+.employee_profile {
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 50px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.profile-picture img {
+  width: 30%;
+  border-radius: 50%;
+}
+
+section.pie-chart {
+  padding-left: 380px;
+  padding-top: 150px;
+  padding-right: 100px;
+  background: #ebeff3;
+  padding-bottom: 80px;
+}
+
+.employee-heading {
+  margin-bottom: 30px;
+}
+
+.custom-employee-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 50px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+}
+
+.inner-info {
+  width: 80%;
+}
+
+.icon {
+  padding: 20px;
+  color: #001529;
+  font-size: 20px;
+}
+
+.donutchart {
+  padding-bottom: 50px;
+}
+
+.chartset-up {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 30px 40px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
+}
+
+.lastest-leave-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.lastest-leave-table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 15px;
+}
+
+.lastest-leave-table th{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 20px;
+}
+
+.lastest-leave-table tr:nth-child(even) {
+  background-color: #ebeff3;
+}
+
+.lastest-leave-table {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
