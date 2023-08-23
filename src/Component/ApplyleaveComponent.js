@@ -158,7 +158,7 @@ const ApplyleaveComponent = () => {
               <div className="applybtn">
                 <div className="buttons">
                   <Form.Item>
-                    <Button>Button</Button>
+                    <Button className="marg-right">Button</Button>
                   </Form.Item>
                   <Form.Item>
                     <Button className="cancel">Cancel</Button>

@@ -144,6 +144,7 @@ section.apply_leave {
   padding-top: 150px;
   overflow: hidden;
   padding-right: 100px;
+  background: #ebeff3;
   padding-left: 380px;
 }
 
@@ -176,11 +177,13 @@ section.apply_leave {
 .leaveForm .ant-form-item.css-dev-only-do-not-override-byeoj0 {
   width: 100%;
 }
-.leaveForm .ant-form.ant-form-horizontal.css-dev-only-do-not-override-byeoj0 {
+.apply_leave .ant-form.ant-form-horizontal.css-dev-only-do-not-override-byeoj0 {
   padding: 40px;
   box-shadow: 0 0 5px #e5dada;
   border-radius: 20px;
+  background: #fff;
 }
+
 .leaveForm :where(.css-dev-only-do-not-override-byeoj0).ant-input-number{
   height: 40px;
   width: 100%;
@@ -223,6 +226,9 @@ section.apply_leave {
 .buttons .ant-form-item.css-dev-only-do-not-override-byeoj0 {
   flex: 0 0 16%;
 } 
+.marg-right {
+  margin-right: 20px;
+}
 .buttons {
   display: flex;
   align-items: center;
@@ -233,4 +239,90 @@ section.apply_leave {
   color: #5c5b5b !important;
   font-weight: 500;
   border: 1px solid grey !important;
+}
+
+/*Dashboard Employee*/
+.employee_profile {
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 50px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.profile-picture img {
+  width: 30%;
+  border-radius: 50%;
+}
+
+section.pie-chart {
+  padding-left: 380px;
+  padding-top: 150px;
+  padding-right: 100px;
+  background: #ebeff3;
+  padding-bottom: 80px;
+}
+
+.employee-heading {
+  margin-bottom: 30px;
+}
+
+.custom-employee-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 50px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+}
+
+.inner-info {
+  width: 80%;
+}
+
+.icon {
+  padding: 20px;
+  color: #001529;
+  font-size: 20px;
+}
+
+.donutchart {
+  padding-bottom: 50px;
+}
+
+.chartset-up {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 30px 40px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
+}
+
+.lastest-leave-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.lastest-leave-table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 15px;
+}
+
+.lastest-leave-table th{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 20px;
+}
+
+.lastest-leave-table tr:nth-child(even) {
+  background-color: #ebeff3;
+}
+
+.lastest-leave-table {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
