@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Button, Menu } from "antd";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
-import { employeItems, adminItems} from "../constant/sidebarItemsconstant.js";
+import { employeItems, adminItems } from "../constant/sidebarItemsconstant.js";
 import { useNavigate } from "react-router-dom";
-
 
 const { SubMenu } = Menu;
 
@@ -16,12 +15,12 @@ const SidebarComponent = (props) => {
     setCollapsed(!collapsed);
   };
 
-  useEffect(()=>{
-    if(props.loginType == 2){
-      handleMenuItemClick("/main/dashboard-employee")
+  useEffect(() => {
+    if (props.loginType == 2) {
+      handleMenuItemClick("/main/dashboard-employee");
     }
-    if(props.logintype == 1){
-      handleMenuItemClick("/main/dashboard-admin")
+    if (props.logintype == 1) {
+      handleMenuItemClick("/main/dashboard-admin");
     }
   }, []);
 
@@ -41,7 +40,11 @@ const SidebarComponent = (props) => {
         );
       }
       return (
-        <Menu.Item key={item.key} icon={item.icon}  onClick={() => handleMenuItemClick(item)} >
+        <Menu.Item
+          key={item.key}
+          icon={item.icon}
+          onClick={() => handleMenuItemClick(item)}
+        >
           {item.label}
         </Menu.Item>
       );
@@ -66,16 +69,11 @@ const SidebarComponent = (props) => {
           theme="dark"
           inlineCollapsed={collapsed}
         >
-          {
-            
-          renderMenuItems(loginType ==1 ? adminItems :employeItems)
-          
-          }
+          {renderMenuItems(loginType == 1 ? adminItems : employeItems)}
         </Menu>
       </div>
     </section>
   );
-  // gbhnj0m
 };
 
 export default SidebarComponent;

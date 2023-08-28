@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Layout from "../Component/layoutComponent";
-import AdminProfile from "../Assets/Images/imagitrue-CEO.jpg"
+import AdminProfile from "../Assets/Images/imagitrue-CEO.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUsers } from "@fortawesome/free-solid-svg-icons";
 import { faHourglassEnd } from "@fortawesome/free-solid-svg-icons";
@@ -100,58 +100,70 @@ function AdminDashboardComponent() {
               <h2>Lasted Leave Application</h2>
             </div>
             <div className="admin-lastest-leave-table">
-            <table>
-              <tr>
-                <th>Employee Name</th>
-                <th>Leave Type</th>
-                <th>Applied Leave</th>
-                <th>Current Status</th>
-                <th>Details</th>
-              </tr>
-              <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>23 Aug 2023</td>
-                <td>Approved</td>
-                <td><button>View details</button></td>
-              </tr>
-              <tr>
-                <td>Centro comercial Moctezuma</td>
-                <td>Francisco Chang</td>
-                <td>24 Aug 2023</td>
-                <td>Pending</td>
-                <td><button>View details</button></td>
-              </tr>
-              <tr>
-                <td>Ernst Handel</td>
-                <td>Roland Mendel</td>
-                <td>25 Aug 2023</td>
-                <td>Approved</td>
-                <td><button>View details</button></td>
-              </tr>
-              <tr>
-                <td>Island Trading</td>
-                <td>Helen Bennett</td>
-                <td>26 Aug 2023</td>
-                <td>Approved</td>
-                <td><button>View details</button></td>
-              </tr>
-              <tr>
-                <td>Laughing Bacchus Winecellars</td>
-                <td>Yoshi Tannamuri</td>
-                <td>26 Aug 2023</td>
-                <td>Pending</td>
-                <td><button>View details</button></td>
-              </tr>
-              <tr>
-                <td>Magazzini Alimentari Riuniti</td>
-                <td>Giovanni Rovelli</td>
-                <td>27 Aug 2023</td>
-                <td>Pending</td>
-                <td><button>View details</button></td>
-              </tr>
-            </table>
-          </div>
+              <table>
+                <tr>
+                  <th>Employee Name</th>
+                  <th>Leave Type</th>
+                  <th>Applied Leave</th>
+                  <th>Current Status</th>
+                  <th>Details</th>
+                </tr>
+                <tr>
+                  <td>Alfreds Futterkiste</td>
+                  <td>Maria Anders</td>
+                  <td>23 Aug 2023</td>
+                  <td>Approved</td>
+                  <td>
+                    <button>View details</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Centro comercial Moctezuma</td>
+                  <td>Francisco Chang</td>
+                  <td>24 Aug 2023</td>
+                  <td>Pending</td>
+                  <td>
+                    <button>View details</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Ernst Handel</td>
+                  <td>Roland Mendel</td>
+                  <td>25 Aug 2023</td>
+                  <td>Approved</td>
+                  <td>
+                    <button>View details</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Island Trading</td>
+                  <td>Helen Bennett</td>
+                  <td>26 Aug 2023</td>
+                  <td>Approved</td>
+                  <td>
+                    <button>View details</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Laughing Bacchus Winecellars</td>
+                  <td>Yoshi Tannamuri</td>
+                  <td>26 Aug 2023</td>
+                  <td>Pending</td>
+                  <td>
+                    <button>View details</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Magazzini Alimentari Riuniti</td>
+                  <td>Giovanni Rovelli</td>
+                  <td>27 Aug 2023</td>
+                  <td>Pending</td>
+                  <td>
+                    <button>View details</button>
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
       </section>

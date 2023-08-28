@@ -31,7 +31,7 @@ export const employeItems = [
 
 export const adminItems = [
     getItem("Dashboard", "1", <HomeOutlined />,'' ,'admin', '/main/dashboard-admin'),
-    getItem("Employee", "2", <ApartmentOutlined /> ,'','admin'),
+    getItem("Employee Section", "2", <ApartmentOutlined /> ,'','admin','/main/admin-employee-section'),
     getItem("Leave", "3", <ContainerOutlined /> ,'' ,'admin'),
     getItem("Log Out", "4", <LogoutOutlined /> ,'' ,'admin'),
   ];
