@@ -102,6 +102,7 @@ function AdminDashboardComponent() {
             <div className="admin-lastest-leave-table">
               <table>
                 <tr>
+                  <th>Employee ID</th>
                   <th>Employee Name</th>
                   <th>Leave Type</th>
                   <th>Applied Leave</th>
@@ -109,33 +110,37 @@ function AdminDashboardComponent() {
                   <th>Details</th>
                 </tr>
                 <tr>
+                  <td>001</td>
                   <td>Alfreds Futterkiste</td>
                   <td>Maria Anders</td>
                   <td>23 Aug 2023</td>
-                  <td>Approved</td>
-                  <td>
-                    <button>View details</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Centro comercial Moctezuma</td>
-                  <td>Francisco Chang</td>
-                  <td>24 Aug 2023</td>
                   <td>Pending</td>
                   <td>
                     <button>View details</button>
                   </td>
                 </tr>
                 <tr>
-                  <td>Ernst Handel</td>
-                  <td>Roland Mendel</td>
-                  <td>25 Aug 2023</td>
+                  <td>002</td>
+                  <td>Centro comercial Moctezuma</td>
+                  <td>Francisco Chang</td>
+                  <td>24 Aug 2023</td>
                   <td>Approved</td>
                   <td>
                     <button>View details</button>
                   </td>
                 </tr>
                 <tr>
+                  <td>003</td>
+                  <td>Ernst Handel</td>
+                  <td>Roland Mendel</td>
+                  <td>25 Aug 2023</td>
+                  <td>Pending</td>
+                  <td>
+                    <button>View details</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>004</td>
                   <td>Island Trading</td>
                   <td>Helen Bennett</td>
                   <td>26 Aug 2023</td>
@@ -145,15 +150,17 @@ function AdminDashboardComponent() {
                   </td>
                 </tr>
                 <tr>
+                  <td>005</td>
                   <td>Laughing Bacchus Winecellars</td>
                   <td>Yoshi Tannamuri</td>
                   <td>26 Aug 2023</td>
-                  <td>Pending</td>
+                  <td>Approved</td>
                   <td>
                     <button>View details</button>
                   </td>
                 </tr>
                 <tr>
+                  <td>006</td>
                   <td>Magazzini Alimentari Riuniti</td>
                   <td>Giovanni Rovelli</td>
                   <td>27 Aug 2023</td>
