@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button, Menu } from "antd";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 import { employeItems, adminItems} from "../constant/sidebarItemsconstant.js";
@@ -15,6 +15,15 @@ const SidebarComponent = (props) => {
   const toggleCollapsed = () => {
     setCollapsed(!collapsed);
   };
+
+  useEffect(()=>{
+    if(props.loginType == 2){
+      handleMenuItemClick("/main/dashboard-employee")
+    }
+    if(props.logintype == 1){
+      handleMenuItemClick("/main/dashboard-admin")
+    }
+  }, []);
 
   const handleMenuItemClick = (key) => {
     console.log("Clicked menu item with key:", key);

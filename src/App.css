@@ -83,6 +83,11 @@ header#header {
   height: 100%;
 }
 
+li.ant-menu-item {
+  font-size: 20px;
+  padding: 30px;
+}
+
 button.ant-btn.css-dev-only-do-not-override-byeoj0.ant-btn-primary {
   display: none;
 }
@@ -325,4 +330,95 @@ section.pie-chart {
   background: #fff;
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/*Admin Dashboard*/
+.admin_profile {
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 50px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.admin-picture img {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.admin-chart {
+  padding-left: 380px;
+  padding-top: 150px;
+  padding-right: 100px;
+  background: #ebeff3;
+  padding-bottom: 80px;
+}
+
+.admin-heading {
+  margin-bottom: 30px;
+}
+
+.custom-admin-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 50px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+}
+
+.inner-info {
+  width: 80%;
+}
+
+.icon {
+  padding: 20px;
+  color: #001529;
+  font-size: 20px;
+}
+
+.admin-lastest-leave-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.admin-lastest-leave-table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 15px;
+}
+
+.admin-lastest-leave-table th{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 20px;
+}
+
+.admin-lastest-leave-table tr:nth-child(even) {
+  background-color: #ebeff3;
+}
+
+.admin-lastest-leave-table {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.admin-lastest-leave-table button {
+  border: 2px solid #001529;
+  background: #001529;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.admin-lastest-leave-table button:hover {
+  border: 2px solid #001529;
+  background: #fff;
+  color: #001529;
+}
+
+.admin-lastest-leave-table tr:nth-child(even) button:hover {
+  background-color: #ebeff3;
 }

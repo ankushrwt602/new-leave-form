@@ -20,17 +20,17 @@ export const getItem = (label, key, icon, children, type ,url) => {
 };
 
 export const employeItems = [
-  getItem("Dashboard", "1", <HomeOutlined /> ,'','employee', 'main/dashboard-employee'),
+  getItem("Dashboard", "1", <HomeOutlined /> ,'','employee','/main/dashboard-employee'),
   getItem("Department", "2", <ApartmentOutlined />,'','employee'),
   getItem("Option 5", "3", <ContainerOutlined />,'','employee'),
-  getItem("Apply Leave", "4", <CarryOutOutlined /> ,'','employee' ,'/main/apply-leave'),
+  getItem("Apply Leave", "4", <CarryOutOutlined /> ,'','employee','/main/apply-leave'),
   getItem("Leave", "5", <AppstoreOutlined />,'','employee'),
   getItem("Log Out", "6", <LogoutOutlined />,'','employee'),
 ];
 
 
 export const adminItems = [
-    getItem("Dashboard", "1", <HomeOutlined />,'' ,'admin'),
+    getItem("Dashboard", "1", <HomeOutlined />,'' ,'admin', '/main/dashboard-admin'),
     getItem("Employee", "2", <ApartmentOutlined /> ,'','admin'),
     getItem("Leave", "3", <ContainerOutlined /> ,'' ,'admin'),
     getItem("Log Out", "4", <LogoutOutlined /> ,'' ,'admin'),
