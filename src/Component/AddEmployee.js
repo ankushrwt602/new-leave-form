@@ -1,10 +1,11 @@
-import { PlusOutlined } from "@ant-design/icons";
+// import { PlusOutlined } from "@ant-design/icons";
 import Layout from "../Component/layoutComponent";
 import React, { useState } from "react";
 import { Button, DatePicker, Radio, Form, Input, Select } from "antd";
 const { TextArea } = Input;
 const AddEmployee = () => {
   const [componentDisabled, setComponentDisabled] = useState(true);
+  //add
   return (
     <>
       <Layout />
