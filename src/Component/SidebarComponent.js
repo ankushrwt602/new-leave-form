@@ -32,7 +32,7 @@ const SidebarComponent = (props) => {
   //   console.log (props.loginType, 'kanuu')
   // },[isEffectRun]);
 
- 
+ //kannu
 
   const handleMenuItemClick = (key) => {
     console.log("Clicked menu item with key:", key);
