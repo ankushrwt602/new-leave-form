@@ -16,8 +16,8 @@ function App() {
       <Route path="/main" element={<MainComponent />} />
       <Route path="/" element={<LoginComponent />} />
       <Route path="/main/apply-leave" element={<ApplyleaveComponent/>} />
-      <Route path="/main/dashboard-employee" element={<DashboardComponent/>}/>
-      <Route path="/main/dashboard-admin" element={<AdminDashboardComponent/>}/>
+      <Route path="/dashboard-employee" element={<DashboardComponent/>}/>
+      <Route path="/dashboard-admin" element={<AdminDashboardComponent/>}/>
       <Route path="/main/admin-employee-section" element={<AdminEmployeeSection/>}/>
       <Route path="/main/add-employee" element={<AddEmployee/>}/>
     </Routes>

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Button, Checkbox, Form, Input, Select } from "antd";
 import login_img from "../Assets/Images/login_img.gif";
 import { useNavigate } from "react-router-dom";
-import { LoginDropdown } from "../constant/constant";
+import { LoginDropdown  , urlAfterLogin} from "../constant/constant";
 const {Option} = Select;
 
 const LoginComponent = () => {
@@ -13,7 +13,16 @@ const LoginComponent = () => {
     const queryParams = new URLSearchParams({
       LoginType: values.login_type,
     }).toString();
-    navigate(`/main?${queryParams}`);
+    // main/dashboard-employee
+    // if(values.login_type == 1){
+    //   navigate(`/dashboard-admin?${queryParams}`);
+    // }else{
+    //   navigate(``)
+    // }
+    localStorage.setItem("LoginType", values.login_type);
+    navigate(`${urlAfterLogin[values.login_type]}?${queryParams}`)
+  
+
   };
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);

@@ -6,13 +6,17 @@ import { faUsers } from "@fortawesome/free-solid-svg-icons";
 import { faHourglassEnd } from "@fortawesome/free-solid-svg-icons";
 import { faHourglass } from "@fortawesome/free-solid-svg-icons";
 import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
+import { useLocation } from 'react-router-dom';
 
 function AdminDashboardComponent() {
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const loginType = queryParams.get("LoginType");
   const [series, setSeries] = useState([70]);
 
   return (
     <>
-      <Layout />
+      <Layout loginType={loginType}/>
       <section className="admin-chart">
         <div className="container">
           <div className="inner-admin-chart">

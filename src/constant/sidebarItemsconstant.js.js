@@ -20,7 +20,7 @@ export const getItem = (label, key, icon, children, type ,url) => {
 };
 
 export const employeItems = [
-  getItem("Dashboard", "1", <HomeOutlined /> ,'','employee','/main/dashboard-employee'),
+  getItem("Dashboard", "1", <HomeOutlined /> ,'','employee','/dashboard-employee'),
   getItem("Department", "2", <ApartmentOutlined />,'','employee'),
   getItem("Option 5", "3", <ContainerOutlined />,'','employee'),
   getItem("Apply Leave", "4", <CarryOutOutlined /> ,'','employee','/main/apply-leave'),
@@ -30,7 +30,7 @@ export const employeItems = [
 
 
 export const adminItems = [
-    getItem("Dashboard", "1", <HomeOutlined />,'' ,'admin', '/main/dashboard-admin'),
+    getItem("Dashboard", "1", <HomeOutlined />,'' ,'admin', '/dashboard-admin'),
     getItem("Employee Section", "2", <ApartmentOutlined /> ,'','admin','/main/admin-employee-section'),
     getItem("Leave", "3", <ContainerOutlined /> ,'' ,'admin'),
     getItem("Log Out", "4", <LogoutOutlined /> ,'' ,'admin'),

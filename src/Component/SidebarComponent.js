@@ -10,19 +10,29 @@ const SidebarComponent = (props) => {
   let navigate = useNavigate();
   const [collapsed, setCollapsed] = useState(false);
   const [loginType, setLoginType] = useState(props.loginType);
+  const [isEffectRun, setIsEffectRun] = useState(false); // Track if the effect has run
+
 
   const toggleCollapsed = () => {
     setCollapsed(!collapsed);
   };
+  
+  // useEffect(() => {
+  //   if(!isEffectRun){
+  //     setIsEffectRun(true);
+  //     console.log("hemant>>>>>>>.")
+  //   if (props.loginType == 2 || localStorage.getItem("LoginType") ==2 
+  //   ) {
+  //     handleMenuItemClick("/main/dashboard-employee");
+  //   }
+  //   if (props.logintype == 1 || localStorage.getItem("LoginType")==1) {
+  //     handleMenuItemClick("/main/dashboard-admin"); 
+  //   }
+  //   }
+  //   console.log (props.loginType, 'kanuu')
+  // },[isEffectRun]);
 
-  useEffect(() => {
-    if (props.loginType == 2) {
-      handleMenuItemClick("/main/dashboard-employee");
-    }
-    if (props.logintype == 1) {
-      handleMenuItemClick("/main/dashboard-admin");
-    }
-  }, []);
+ 
 
   const handleMenuItemClick = (key) => {
     console.log("Clicked menu item with key:", key);
@@ -30,7 +40,7 @@ const SidebarComponent = (props) => {
   };
 
   const renderMenuItems = (items) => {
-    items = loginType == 1 ? adminItems : employeItems;
+    items = loginType == 1  ||  localStorage.getItem("LoginType")==1 ? adminItems : employeItems;
     return items.map((item) => {
       if (item.children) {
         return (
@@ -69,11 +79,13 @@ const SidebarComponent = (props) => {
           theme="dark"
           inlineCollapsed={collapsed}
         >
-          {renderMenuItems(loginType == 1 ? adminItems : employeItems)}
+          {renderMenuItems(loginType == 1 || localStorage.getItem("LoginType")==1? adminItems : employeItems)}
         </Menu>
       </div>
     </section>
   );
 };
 
-export default SidebarComponent;
+
+const  MemoizedSidebarComponent = React.memo(SidebarComponent);
+export default MemoizedSidebarComponent;

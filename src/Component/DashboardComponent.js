@@ -7,8 +7,13 @@ import { faUsers } from "@fortawesome/free-solid-svg-icons";
 import { faHourglassEnd } from "@fortawesome/free-solid-svg-icons";
 import { faHourglass } from "@fortawesome/free-solid-svg-icons";
 import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
+import { useLocation } from 'react-router-dom';
+import LayoutComponent from "../Component/layoutComponent";
 
 function DashboardComponent() {
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const loginType = queryParams.get("LoginType");
   const [series, setSeries] = useState([70]);
 
   const options = {
@@ -28,7 +33,7 @@ function DashboardComponent() {
 
   return (
     <>
-      <Layout />
+      <Layout loginType={loginType}/>
       <section className="pie-chart">
         <div className="container">
           <div className="inner-pie-chart">
@@ -191,3 +196,4 @@ function DashboardComponent() {
   );
 }
 export default DashboardComponent;
+

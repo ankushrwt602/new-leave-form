@@ -10,3 +10,11 @@ export const LoginDropdown = [
     },
 
   ];
+
+  export const urlAfterLogin = {
+    1 : '/dashboard-admin' ,
+    2 :  '/dashboard-employee'
+
+ };
+
+  
