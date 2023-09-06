@@ -3,7 +3,6 @@ import Layout from "../Component/layoutComponent";
 import React, { useState } from "react";
 import {
   Button,
-  Checkbox,
   DatePicker,
   Form,
   Input,
@@ -13,20 +12,15 @@ import {
 // const { RangePicker } = DatePicker;
 const { TextArea } = Input;
 
-const FormDisabledDemo = () => {
-  const [componentDisabled, setComponentDisabled] = useState(true);
+function AddEmployee () {
+  
   return (
     <>
       <Layout />
       <section className="add_employee">
         <div className="container">
           <div className="add_employee_inner_frame">
-            <Checkbox
-              checked={componentDisabled}
-              onChange={(e) => setComponentDisabled(e.target.checked)}
-            >
-              Form disabled
-            </Checkbox>
+
             <Form
               labelCol={{
                 span: 4,
@@ -35,11 +29,10 @@ const FormDisabledDemo = () => {
                 span: 14,
               }}
               layout="horizontal"
-              disabled={componentDisabled}
               style={{
                 maxWidth: 600,
-              }}
-            >
+              }}>
+                
               <Form.Item
                 label="Full Name"
                 name={["user", "name"]}
@@ -219,4 +212,4 @@ const FormDisabledDemo = () => {
     </>
   );
 };
-export default () => <FormDisabledDemo />;
+export default AddEmployee;

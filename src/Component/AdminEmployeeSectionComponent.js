@@ -1,18 +1,30 @@
-import Layout from '../Component/layoutComponent';
-import React from 'react'
+import Layout from "../Component/layoutComponent";
+import React from "react";
+import { useState } from "react";
+import { Modal } from "antd";
 
-function AdminEmployeeSection(){
-    return(
-        <>
-        <Layout/>
-        <section className='admin-employee-section'>
-            <div className="container">
-                <div className="inner-admin-employee-frame">
-                    <div className="add-employye-btn">
-                        <button>Add New Employee</button>
-                    </div>
-                    <div className="admin-employee-table">
-                    <table>
+const AdminEmployeeSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+  return (
+    <>
+      <Layout />
+      <section className="admin-employee-section">
+        <div className="container">
+          <div className="inner-admin-employee-frame">
+            <div className="add-employye-btn">
+              <a href="/main/add-employee">Add New Employee</a>
+            </div>
+            <div className="admin-employee-table">
+              <table>
                 <tr>
                   <th>Employee ID</th>
                   <th>Employee Name</th>
@@ -28,7 +40,26 @@ function AdminEmployeeSection(){
                   <td>23 Aug 2023</td>
                   <td>Active</td>
                   <td>
-                    <button>View details</button>
+                    <button type="primary" onClick={showModal}>View details</button>
+                    <Modal
+                    title="Alfreds Futterkiste"
+                    open={isModalOpen}
+                    onOk={handleOk}
+                    onCancel={handleCancel}
+                  >
+                    <p>Email - alfreds@imagitrue.com</p>
+                    <p>Gender - Male</p>
+                    <p>Department - Web Developer</p>
+                    <p>D.O.B - 12 June 1999</p>
+                    <p>Contact Number - +91-7894-456-456</p>
+                    <p>City - Dehradun</p>
+                    <p>State - Uttarakhand</p>
+                    <p>Address - Jakhan, Dehradun U.k</p>
+                    <p>Joining Date - 23 August 2023</p>
+                    <p>Current Status - Active</p>
+                    <p>Username - alfreds</p>
+                    <p>Password - 123@Password</p>
+                  </Modal>
                   </td>
                 </tr>
                 <tr>
@@ -38,7 +69,7 @@ function AdminEmployeeSection(){
                   <td>24 Aug 2023</td>
                   <td>Active</td>
                   <td>
-                    <button>View details</button>
+                    <button type="primary" onClick={showModal}>View details</button>
                   </td>
                 </tr>
                 <tr>
@@ -48,7 +79,7 @@ function AdminEmployeeSection(){
                   <td>25 Aug 2023</td>
                   <td>Active</td>
                   <td>
-                    <button>View details</button>
+                    <button type="primary" onClick={showModal}>View details</button>
                   </td>
                 </tr>
                 <tr>
@@ -58,7 +89,7 @@ function AdminEmployeeSection(){
                   <td>26 Aug 2023</td>
                   <td>Active</td>
                   <td>
-                    <button>View details</button>
+                    <button type="primary" onClick={showModal}>View details</button>
                   </td>
                 </tr>
                 <tr>
@@ -68,7 +99,7 @@ function AdminEmployeeSection(){
                   <td>26 Aug 2023</td>
                   <td>Active</td>
                   <td>
-                    <button>View details</button>
+                    <button type="primary" onClick={showModal}>View details</button>
                   </td>
                 </tr>
                 <tr>
@@ -78,16 +109,16 @@ function AdminEmployeeSection(){
                   <td>27 Aug 2023</td>
                   <td>Active</td>
                   <td>
-                    <button>View details</button>
+                    <button type="primary" onClick={showModal}>View details</button>
                   </td>
                 </tr>
               </table>
-                    </div>
-                </div>
             </div>
-        </section>
-        </>
-    );
-}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
 
 export default AdminEmployeeSection;

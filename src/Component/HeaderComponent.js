@@ -11,7 +11,7 @@ function HeaderComponent(){
               <div className="container">
                  <div className="nav">
                     <div className="logo">
-                        <img src={logo} alt="" />
+                        <a href=""><img src={logo} alt="" /></a>
                     </div>
                     <div className='nav-list'>
                         <table>

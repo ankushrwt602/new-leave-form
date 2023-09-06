@@ -7,6 +7,13 @@ import DashboardComponent from "./Component/DashboardComponent";
 import AdminDashboardComponent from "./Component/AdminDashboardComponent";
 import AdminEmployeeSection from "./Component/AdminEmployeeSectionComponent";
 import AddEmployee from "./Component/AddEmployee";
+import AdminleaveTypes from "./Component/AdminLeaveTypes";
+import AdminAddLeave from "./Component/AdminAddLeave";
+import AdminManageLeave from "./Component/AdminManageLeave";
+import ManageAdmin from "./Component/ManageAdmin";
+import AddAdminManage from "./Component/AddAdminManage";
+import EmployeeLeaveHistory from "./Component/EmployeeLeaveHistory";
+import EmployeeUpcomingLeaveCalendar from "./Component/EmployeeUpcomingLeaveCalendar";
 
 function App() {
   return (
@@ -20,6 +27,13 @@ function App() {
       <Route path="/dashboard-admin" element={<AdminDashboardComponent/>}/>
       <Route path="/main/admin-employee-section" element={<AdminEmployeeSection/>}/>
       <Route path="/main/add-employee" element={<AddEmployee/>}/>
+      <Route path="/main/admin-leave-types" element={<AdminleaveTypes/>}/>
+      <Route path="/main/admin-add-new-leave" element={<AdminAddLeave/>}/>
+      <Route path="/main/admin-manage-leave" element={<AdminManageLeave/>}/>
+      <Route path="/main/manage-admin" element={<ManageAdmin/>}/>
+      <Route path="/main/add-manage-admin" element={<AddAdminManage/>}/>
+      <Route path="/main/employee-leave-history" element={<EmployeeLeaveHistory/>}/>
+      <Route path="/main/employeeupcomingleavecalendar" element={<EmployeeUpcomingLeaveCalendar/>}/>
     </Routes>
   </Router>
   </>
