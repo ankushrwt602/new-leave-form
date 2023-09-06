@@ -9,7 +9,7 @@ import {
 // const { RangePicker } = DatePicker;
 const { TextArea } = Input;
 
-function AddEmployee () {
+function AdminAddLeave () {
   
   return (
     <>
@@ -75,4 +75,4 @@ function AddEmployee () {
     </>
   );
 };
-export default AddEmployee;
+export default AdminAddLeave;
